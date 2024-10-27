@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moje druhá webová stránka</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Kontejner pro hlavičku -->
+    <div class="container light header--sticky">
+        <header>
+            <div id="logo">
+                <img class="logo__img" src="images/logo.svg" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Domů</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <!-- Tělo stránky -->
+    <main>
+        <!-- První konejner -->
+        <div class="container light">
+            <section class="blogposts">
+                <article>
+                    <h2>Jak jsem se naučil HTML</h2>
+                    <div class="subheader">
+                        <span>1. 1. 2021</span>
+                        <span>Jan Novák</span>
+                    </div>
+
+                    <!-- Odělující čára -->
+                    <div class="divider">
+                    </div>
+
+                    <!-- Obsah blogpostu -->
+                     <div class="blogpost">
+                        <div class="blogpost__content blogpost__order-1">
+                            <p class="perex">
+                                Naučit se HTML bylo jedním z nejlepších rozhodnutí, které jsem kdy udělal. Tento jazyk mi
+                                otevřel dveře do světa webového vývoje a umožnil mi vytvářet vlastní webové stránky.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                                voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                        </div>
+                        <div class="blogpost__image blogpost__order-2">
+                            <img src="images/o-nas__1.jpg" alt="Blogpost Image">
+                        </div>
+                     </div>
+                </article>
+            </section>
+        </div>
+
+        <!-- Druhý kontejner -->
+        <div class="container dark">
+            <section class="fullscreen">
+                <div class="fullscreen__img">
+                    <img src="images/o-nas__2.jpg" alt="O nás">
+                </div>
+            </section>
+        </div>
+
+        <!-- Třetí kontejner -->
+        <div class="container light">
+            <section class="blogposts">
+                <article>
+                    <h2>Jak jsem začínal</h2>
+                    <div class="subheader">
+                        <span>2. 1. 2021</span>
+                        <span>Jan Novák</span>
+                    </div>
+                    
+                    <!-- Odělující čára -->
+                    <div class="divider">
+                    </div>
+                    <div class="blogpost blogpost--list">
+                        <div class="blogpost__content">
+                            <ul>
+                                <li>HTML 5</li>
+                                <ul>
+                                    <li>Strukturu webu</li>
+                                    <li>HTML tagy a elementy</li>
+                                </ul>
+                                <li>CSS 3</li>
+                                <ul>
+                                    <li>Mobilní design</li>
+                                    <li>Vzhled stránky</li>
+                                </ul>
+                            </ul>
+                        </div>
+                        <div class="blogpost__image">
+                            <img src="images/o-nas__3.jpg" alt="Blogpost Image">
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
+
+        <!-- Čtvrtý kontejner -->
+        <div class="container dark">
+            <section class="matezajem">
+                <h2>Máte zájem o web?</h2>
+                <p>Připojte se k našim spokojeným zákazníkům a získejte profesionální webové stránky, které vám pomohou
+                    uspět v online světě.</p>
+                <p>
+                    <a class="button" href="kontakt.html">Kontaktujte nás</a>
+                </p>
+            </section>
+        </div>
+    </main>
+
+    <!-- Patička stránky -->
+    <div class="container light">
+        <footer>
+            <a href="https://www.facebook.com">
+                <img src="images/icon__facebook.svg" alt="Facebook logo" title="Facebook">
+            </a>
+            <a href="https://www.google.com">
+                <img src="images/icon__google.svg" alt="Google logo" title="Google">
+            </a>
+        </footer>
+    </div>
+</body>
+
+</html>
