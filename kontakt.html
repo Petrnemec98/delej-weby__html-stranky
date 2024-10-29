@@ -1,84 +1,97 @@
 <!DOCTYPE html>
 <html lang="cs">
+<!-- Hlavička stránky -->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moje druhá webová stránka</title>
-    <link rel="stylesheet" href="css/style.css">
 </head>
+<!-- Konec hlavičky stránky -->
 
 <body>
-    <!-- Kontejner pro hlavičku -->
-    <div class="container light header--sticky">
+    <!-- Kontejner pro Hlavičku -->
+    <div class="container gray header--sticky">
+        <!-- Header sticky je pomocná třída, kteoru budeme potřebovat při stylování-->
+
+        <!-- Hlavička stránky -->
         <header>
-            <div id="logo">
+            <div class="header-logo">
                 <img class="logo__img" src="images/logo.svg" alt="Logo">
             </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Domů</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="kontakt.html">Kontakt</a></li>
-                </ul>
-            </nav>
+            <div class="header-menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Domů</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
+        <!-- Konec hlavičky stránky -->
     </div>
 
     <!-- Tělo stránky -->
     <main>
-        <!-- První kontejner-->
+        <!-- Kontejner pro obsah -->
         <div class="container dark">
-            <section id="kontakt">
-                <div class="kontakt__text">
+            <section class="kontakt__header">
+                <!-- Kontakt -->
+                <div class="kontakt__header__content">
                     <p class="subheader">Kontaktujte nás</p>
-                    <h1>Napište nám, pokud Vás cokoliv zajímá!</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae suscipit alias
-                        exercitationem! Veritatis officia excepturi aperiam dolorem sequi delectus illum natus nesciunt?
-                        Provident, veritatis. Quaerat est nulla fugit! Aperiam, libero?</p>
-                    <p>
-                        <a href="mailto:vojta@edu.delejweby.cz">vojta@edu.delejweby.cz</a>
-                    </p>
-                    <p>
-                       <a href="tel:+420123456789">+420 123 456 789</a>
-                    </p>
-                    <p>
-                        <a href="">U Potůčků 123, 123 45, Praha</a> 
-                    </p>
+                    <h1>Napište nám pokud Vás cokoliv zajímá?</h1>
+                    <p>Máte-li jakékoliv dotazy nebo potřebujete další informace, neváhejte nás kontaktovat.</p>
+                    <div class="kontakt__link">
+                        <a href="mailto:neco@edu.delejweby.cz">neco@edu.delejweby.cz</a>
+                        <a href="tel:+420777888999">+420 777 888 999</a>
+                        <a href="https://maps.app.goo.gl/gytzJpwd2R38nKVS7">Hrušková 720 Liberec 6</a>
+                    </div>
                 </div>
-                <div class="mapa">
+                <!-- Google Maps -->
+                <div class="kontakt__header__content">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.0000000000005!2d14.42007631573363!3d50.08804407942684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94b7b3b3b6e5%3A0x4b8b3f3b3b3b3b3!2zS2F0aWUgTWFyY2hlbGxlIFN0!5e0!3m2!1scs!2scz!4v1617220730001!5m2!1scs!2scz"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
                 </div>
             </section>
         </div>
-        <!-- Konec prvního kontejneru -->
 
-        <!-- Druhý kontejner -->
+        <!-- Kontejner pro formulář -->
         <div class="container light">
-            <section class="formular">
-                <iframe
-                    src="https://docs.google.com/forms/d/e/1FAIpQLScCkIsJF-FlbjL1DxhWNdaAWcsy3WzwEko0FJUiXxBGQAV5tw/viewform?embedded=true"
-                    width="640" height="1424" frameborder="0" marginheight="0" marginwidth="0">Načítání…</iframe>
+
+            <section>
+                <!-- Formulář -->
+                <div class="map">
+                    <iframe
+                        src="https://docs.google.com/forms/d/e/1FAIpQLScCkIsJF-FlbjL1DxhWNdaAWcsy3WzwEko0FJUiXxBGQAV5tw/viewform?embedded=true"
+                        width="640" height="1424" frameborder="0" marginheight="0" marginwidth="0">Načítání…
+                    </iframe>
+                </div>
             </section>
         </div>
-        <!-- Konec druhého kontejneru -->
-
     </main>
-    <!-- Konec těla stránky -->
+    <!-- Čtvrtý kontejner -->
+    <div class="container gray">
 
-    <!-- Patička stránky -->
-    <div class="container light">
+        <!-- Patička stránky -->
         <footer>
-            <a href="https://www.facebook.com">
-                <img src="images/icon__facebook.svg" alt="Facebook logo" title="Facebook">
-            </a>
-            <a href="https://www.google.com">
-                <img src="images/icon__google.svg" alt="Google logo" title="Google">
-            </a>
+            <div class="footer__box">
+                <a href="https://www.facebook.com">
+                    <img src="images/icon__facebook.svg" alt="Facebook logo" title="Facebook">
+                </a>
+                <a href="https://www.google.com">
+                    <img src="images/icon__google.svg" alt="Google logo" title="Google">
+                </a>
+                <a href="https://www.google.com">
+                    <img src="images/icon__google.svg" alt="Google logo" title="Google">
+                </a>
+            </div>
         </footer>
+        <!-- Konec patičky stránky -->
     </div>
+    <!-- Konec čtvrtého kontejneru -->
 </body>
 
 </html>

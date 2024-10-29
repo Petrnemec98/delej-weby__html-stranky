@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="cs">
-
+<!-- Hlavička stránky -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moje druhá webová stránka</title>
-
-    <link rel="stylesheet" href="css/style.css">
 </head>
+<!-- Konec hlavičky stránky -->
 
 <body>
-    <!-- Kontejner pro pozdrav -->
-    <div class="container light header--sticky">
+    <!-- Kontejner pro Hlavičku -->
+    <div class="container gray header--sticky"> <!-- Header sticky je pomocná třída, kteoru budeme potřebovat při stylování-->
+
+        <!-- Hlavička stránky -->
         <header>
-            <div id="logo">
+            <div class="header-logo">
                 <img class="logo__img" src="images/logo.svg" alt="Logo">
             </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Domů</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="kontakt.html">Kontakt</a></li>
-                </ul>
-            </nav>
+            <div class="header-menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Domů</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
+        <!-- Konec hlavičky stránky -->
     </div>
 
     <!-- Tělo stránky -->
@@ -32,87 +36,77 @@
         <div class="container light">
 
             <!-- Úvodní sekce -->
-            <section id="uvod" class="light">
-                <div id="uvod__obrazek">
-                    <img src="images/logo.svg" alt="Úvodní obrázek">
-                </div>
-                <div class="uvod__text">
-                    <h1>Naše druhá webová stránka</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                        ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur.
-                    </p>
-                    <p>
-                        <a class="button" href="blog.html">Přejít na blog</a>
-                    </p>
-                </div>
-            </section>
+            <section>
+                <h1>Naše první webová stránka</h1>
 
-            <!-- Sekce co jsem se naučili-->
-            <section id="cojsemsenaucil">
-                <p class="subheader">Co jsem se naučil</p>
-                <ul>
-                    <li>
-                        <img src="images/icon__vs-code.png" alt="Visual Studio Code logo" title="Visual Studio Code">
-                        <span>VS Code</span>
-                    </li>
-                    <li>
-                        <img src="images/icon__html5.png" alt="HTML logo" title="HTML">
-                        <span>HTML</span>
-                    </li>
-                    <li>
-                        <img src="images/icon__css3.png" alt="CSS logo" title="CSS">
-                        <span>CSS</span>
-                    </li>
-                </ul>
+                <div class="intro">
+                    <div class="intro__img">
+                        <img src="images/logo.svg" alt="Logo">
+                    </div>
+                    <div class="intro__content">
+                        <p>Vítejte na našem webu, kde se specializujeme na tvorbu moderních a funkčních webových
+                            stránek. Hodnota, kvalita a spolehlivost!</p>
+                    </div>
+                </div>
+                <!-- tlačítko -->
+                <a href="/blog.html" class="btn">
+                    <span>Můj první Blog</span>
+                </a>
             </section>
+            <!-- Konec úvodní sekce -->
         </div>
         <!-- Konec prvního kontejneru -->
 
         <!-- Druhý kontejner -->
         <div class="container dark">
-            <section class="comumime">
+
+            <!-- Sekce benefitů-->
+            <section>
                 <h2>Co vše umíme?</h2>
 
-                <!-- Nový box dovednosti, který má v sobě jen 3 bílé boxy s obsahem -->
-                <div class="dovednosti">
-                    <div class="dovednost">
-                        <img src="images/icon__hodnota.png" alt="Hodnota" title="Hodnota">
-                        <h3>Hodnota</h3>
-                        <p>Poskytujeme kvalitní služby a produkty, které přinášejí skutečnou hodnotu našim zákazníkům.</p>
+                <div class="benefits">
+                    <div class="benefit-box">
+                        <div class="benefit-box__inner">
+                            <img src="images/icon__hodnota.png">
+                            <h3>Hodnota</h3>
+                            <p>Naše práce spočívá v neustálém zlepšování a hledání řešení, která přinášejí skutečný
+                                přínos.</p>
+                        </div>
                     </div>
-    
-                    <div class="dovednost">
-                        <img src="images/icon__spolehlivost.png" alt="Spolehlivost" title="Spolehlivost">
-                        <h3>Spolehlivost</h3>
-                        <p>Naši zákazníci nám důvěřují, protože dodržujeme svá slova a vždy se snažíme vyjít vstříc jejich
-                            potřebám.</p>
+                    <div class="benefit-box">
+                        <div class="benefit-box__inner">
+                            <img src="images/icon__spolehlivost.png">
+                            <h3>Spolehlivost</h3>
+                            <p>Spolehlivost je pro nás klíčová, proto vždy dodržujeme termíny a udržujeme aktivní
+                                komunikaci.</p>
+                        </div>
                     </div>
-    
-                    <div class="dovednost">
-                        <img src="images/icon__kvalita.png" alt="Kvalita" title="Kvalita">
-                        <h3>Kvalita</h3>
-                        <p>Naši zaměstnanci jsou odborníci ve svém oboru a vždy se snažíme dodávat produkty a služby
-                            nejvyšší
-                            kvality.</p>
+                    <div class="benefit-box">
+                        <div class="benefit-box__inner">
+                            <img src="images/icon__kvalita.png">
+                            <h3>Kavlita</h3>
+                            <p>Kvalitu našich webů zajišťujeme pečlivým výběrem technologií a důkladnou kontrolou.</p>
+                        </div>
                     </div>
                 </div>
             </section>
+            <!-- Konec sekce benefitů-->
         </div>
         <!-- Konec druhého kontejneru -->
 
         <!-- Třetí kontejner -->
         <div class="container light">
-            <section id="napismi" class="light">
-                <h2>Máte zájem o webové stránky na míru? Napiště mi!</h2>
-                <p>
-                    <a class="button" href="kontakt.html">Ozvěte se nám</a>
-                </p>
+
+            <!-- Kontaktní sekce -->
+            <section>
+                <h2>Napište mi, pokud máte zájem o nové webové stránky!</h2>
+
+                <a href="/blog.html" class="btn">
+                    <span>Můj první Blog</span>
+                </a>
+
             </section>
+            <!-- Konec kontaktní sekce -->
         </div>
         <!-- Konec třetího kontejneru -->
 
@@ -120,19 +114,26 @@
     <!-- Konec těla stránky -->
 
     <!-- Patička stránky -->
-    <div class="container light">
-        <footer>
-            <a href="https://www.facebook.com">
-                <img src="images/icon__facebook.svg" alt="Facebook logo" title="Facebook">
-            </a>
-            <a href="https://www.google.com">
-                <img src="images/icon__google.svg" alt="Google logo" title="Google">
-            </a>
-            <a href="https://www.google.com">
-                <img src="images/icon__google.svg" alt="Google logo" title="Google">
-            </a>
-        </footer>
-    </div>
-</body>
 
+    <!-- Čtvrtý kontejner -->
+    <div class="container gray">
+
+        <!-- Patička stránky -->
+        <footer>
+            <div class="footer__box">
+                <a href="https://www.facebook.com">
+                    <img src="images/icon__facebook.svg" alt="Facebook logo" title="Facebook">
+                </a>
+                <a href="https://www.google.com">
+                    <img src="images/icon__google.svg" alt="Google logo" title="Google">
+                </a>
+                <a href="https://www.google.com">
+                    <img src="images/icon__google.svg" alt="Google logo" title="Google">
+                </a>
+            </div>
+        </footer>
+        <!-- Konec patičky stránky -->
+    </div>
+    <!-- Konec čtvrtého kontejneru -->
+</body>
 </html>
