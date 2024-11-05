@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="cs">
 <!-- Hlavička stránky -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,11 +10,14 @@
 <!-- Konec hlavičky stránky -->
 
 <body>
-    <!-- Kontejner pro Hlavičku -->
-    <div class="container gray header--sticky"> <!-- Header sticky je pomocná třída, kteoru budeme potřebovat při stylování-->
 
-        <!-- Hlavička stránky -->
-        <header>
+
+
+    <!-- Hlavička stránky -->
+    <header class="section--gray section--sticky">
+        <!-- Section sticky je pomocná třída, kteoru budeme potřebovat při stylování-->
+        <!-- Kontejner pro Hlavičku -->
+        <div class="container">
             <div class="header-logo">
                 <img class="logo__img" src="images/logo.svg" alt="Logo">
             </div>
@@ -26,17 +30,15 @@
                     </ul>
                 </nav>
             </div>
-        </header>
-        <!-- Konec hlavičky stránky -->
-    </div>
+        </div>
+    </header>
+    <!-- Konec hlavičky stránky -->
 
     <!-- Tělo stránky -->
     <main>
-        <!-- První kontejner-->
-        <div class="container light">
-
-            <!-- Úvodní sekce -->
-            <section>
+        <!-- Úvodní světlá sekce -->
+        <section class="section section--light">
+            <div class="container">
                 <h1>Naše první webová stránka</h1>
 
                 <div class="intro">
@@ -52,16 +54,13 @@
                 <a href="/blog.html" class="btn">
                     <span>Můj první Blog</span>
                 </a>
-            </section>
-            <!-- Konec úvodní sekce -->
-        </div>
-        <!-- Konec prvního kontejneru -->
+            </div>
+        </section>
+        <!-- Konec úvodní sekce -->
 
-        <!-- Druhý kontejner -->
-        <div class="container dark">
-
-            <!-- Sekce benefitů-->
-            <section>
+        <!-- 2. sekce tmavá -->
+        <section class="section section--dark">
+            <div class="container">
                 <h2>Co vše umíme?</h2>
 
                 <div class="benefits">
@@ -89,37 +88,26 @@
                         </div>
                     </div>
                 </div>
-            </section>
-            <!-- Konec sekce benefitů-->
-        </div>
-        <!-- Konec druhého kontejneru -->
+            </div>
+        </section>
+        <!-- Konec 2. sekce -->
 
-        <!-- Třetí kontejner -->
-        <div class="container light">
-
-            <!-- Kontaktní sekce -->
-            <section>
+        <!-- 3. sekce světlá -->
+        <section class="section section--light">
+            <div class="container">
                 <h2>Napište mi, pokud máte zájem o nové webové stránky!</h2>
 
                 <a href="/blog.html" class="btn">
                     <span>Můj první Blog</span>
                 </a>
-
-            </section>
-            <!-- Konec kontaktní sekce -->
-        </div>
-        <!-- Konec třetího kontejneru -->
-
+            </div>
+        </section>
     </main>
     <!-- Konec těla stránky -->
 
     <!-- Patička stránky -->
-
-    <!-- Čtvrtý kontejner -->
-    <div class="container gray">
-
-        <!-- Patička stránky -->
-        <footer>
+    <footer class="section section--gray">
+        <div class="container">
             <div class="footer__box">
                 <a href="https://www.facebook.com">
                     <img src="images/icon__facebook.svg" alt="Facebook logo" title="Facebook">
@@ -131,9 +119,10 @@
                     <img src="images/icon__google.svg" alt="Google logo" title="Google">
                 </a>
             </div>
-        </footer>
-        <!-- Konec patičky stránky -->
-    </div>
-    <!-- Konec čtvrtého kontejneru -->
+        </div>
+    </footer>
+    <!-- Konec patičky stránky -->
+
 </body>
+
 </html>

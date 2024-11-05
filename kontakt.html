@@ -10,12 +10,11 @@
 <!-- Konec hlavičky stránky -->
 
 <body>
-    <!-- Kontejner pro Hlavičku -->
-    <div class="container gray header--sticky">
-        <!-- Header sticky je pomocná třída, kteoru budeme potřebovat při stylování-->
-
-        <!-- Hlavička stránky -->
-        <header>
+    <!-- Hlavička stránky -->
+    <header class="section--gray section--sticky">
+        <!-- Section sticky je pomocná třída, kteoru budeme potřebovat při stylování-->
+        <!-- Kontejner pro Hlavičku -->
+        <div class="container">
             <div class="header-logo">
                 <img class="logo__img" src="images/logo.svg" alt="Logo">
             </div>
@@ -28,15 +27,15 @@
                     </ul>
                 </nav>
             </div>
-        </header>
-        <!-- Konec hlavičky stránky -->
-    </div>
+        </div>
+    </header>
+    <!-- Konec hlavičky stránky -->
 
     <!-- Tělo stránky -->
     <main>
-        <!-- Kontejner pro obsah -->
-        <div class="container dark">
-            <section class="kontakt__header">
+        <!-- 1. sekce tmavá -->
+        <section class="section section--dark">
+            <div class="container kontakt__header">
                 <!-- Kontakt -->
                 <div class="kontakt__header__content">
                     <p class="subheader">Kontaktujte nás</p>
@@ -55,13 +54,13 @@
                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
                     </iframe>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
+        <!-- Konec 1. sekce tmavá -->
 
-        <!-- Kontejner pro formulář -->
-        <div class="container light">
-
-            <section>
+        <!-- 2. sekce světlá -->
+        <section class="section section--light">
+            <dic class="container">
                 <!-- Formulář -->
                 <div class="map">
                     <iframe
@@ -69,14 +68,14 @@
                         width="640" height="1424" frameborder="0" marginheight="0" marginwidth="0">Načítání…
                     </iframe>
                 </div>
-            </section>
-        </div>
+                </div>
+        </section>
+        <!-- Konec 2. sekce světlá -->
+         
     </main>
-    <!-- Čtvrtý kontejner -->
-    <div class="container gray">
-
-        <!-- Patička stránky -->
-        <footer>
+    <!-- Patička stránky -->
+    <footer class="section section--gray">
+        <div class="container">
             <div class="footer__box">
                 <a href="https://www.facebook.com">
                     <img src="images/icon__facebook.svg" alt="Facebook logo" title="Facebook">
@@ -88,10 +87,10 @@
                     <img src="images/icon__google.svg" alt="Google logo" title="Google">
                 </a>
             </div>
-        </footer>
-        <!-- Konec patičky stránky -->
-    </div>
-    <!-- Konec čtvrtého kontejneru -->
+        </div>
+    </footer>
+    <!-- Konec patičky stránky -->
+
 </body>
 
 </html>

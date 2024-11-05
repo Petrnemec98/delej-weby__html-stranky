@@ -10,12 +10,11 @@
 <!-- Konec hlavičky stránky -->
 
 <body>
-    <!-- Kontejner pro Hlavičku -->
-    <div class="container gray header--sticky">
-        <!-- Header sticky je pomocná třída, kteoru budeme potřebovat při stylování-->
-
-        <!-- Hlavička stránky -->
-        <header>
+    <!-- Hlavička stránky -->
+    <header class="section--gray section--sticky">
+        <!-- Section sticky je pomocná třída, kteoru budeme potřebovat při stylování-->
+        <!-- Kontejner pro Hlavičku -->
+        <div class="container">
             <div class="header-logo">
                 <img class="logo__img" src="images/logo.svg" alt="Logo">
             </div>
@@ -28,18 +27,15 @@
                     </ul>
                 </nav>
             </div>
-        </header>
-        <!-- Konec hlavičky stránky -->
-    </div>
+        </div>
+    </header>
+    <!-- Konec hlavičky stránky -->
 
     <!-- Tělo stránky -->
     <main>
-        <!-- První kontejner-->
-        <div class="container light">
-
-            <!-- Sekce blog -->
-            <section>
-
+        <!-- Sekce blog -->
+        <section class="section section--light">
+            <div class="container">
                 <div class="blog__header"> <!-- Hlavička blogu nadpis + datum -->
                     <h1>Moje zkušenosti</h1>
                     <p class="subheader">1. 9. 2024</p>
@@ -60,31 +56,24 @@
                     </div>
                 </div>
                 <!-- Konec obsahu blogu -->
+            </div>
+        </section>
+        <!-- Konec sekce blog -->
 
-            </section>
-            <!-- Konec sekce blog -->
-        </div>
-        <!-- Konec prvního kontejneru -->
-
-        <!-- Druhý kontejner -->
-        <div class="container dark">
-            <!-- Sekce obrázku -->
-            <section class="section__images">
+        <!-- 2. sekce tmavá -->
+        <section class="section section--dark">
+            <div class="container container__images">
                 <img src="images/o-nas__2.jpg" alt="Image 1" class="section__images__img">
-            </section>
-            <!-- Konec sekce obrázku -->
-        </div>
-        <!-- Konec druhého kontejneru -->
+            </div>
+        </section>
+        <!-- Konec 2. sekce -->
 
-        <!-- Třetí kontejner -->
-        <div class="container light">
-
-            <!-- Sekce blog -->
-            <section>
-
+        <!-- 3. sekce světlá -->
+        <section class="section section--light">
+            <div class="container">
                 <div class="blog__header"> <!-- Hlavička blogu nadpis + datum -->
                     <h2>Jak jsem začínal</h1>
-                    <p class="subheader">1. 9. 2024</p>
+                        <p class="subheader">1. 9. 2024</p>
                 </div>
 
                 <div class="blog__divider"></div> <!-- Oddělovač -->
@@ -95,7 +84,9 @@
                         <img src="images/o-nas__1.jpg" alt="Blog image" class="blog__box__img">
                     </div>
                     <div class="blog__box__content">
-                        <p>Začátky byly náročné, protože jsem si musel osvojit řadu nových dovedností. Postupně jsem se naučil rozumět struktuře a designu webových stránek, což zahrnovalo jak jejich vzhled, tak i funkčnost.</p>
+                        <p>Začátky byly náročné, protože jsem si musel osvojit řadu nových dovedností. Postupně jsem se
+                            naučil rozumět struktuře a designu webových stránek, což zahrnovalo jak jejich vzhled, tak i
+                            funkčnost.</p>
                         <!-- Seznam -->
                         <ul>
                             <li>HTML 5</li>
@@ -114,18 +105,14 @@
                     </div>
                 </div>
                 <!-- Konec obsahu blogu -->
-
-            </section>
-            <!-- Konec sekce blog -->
-        </div>
-        <!-- Konec třetího kontejneru -->
+            </div>
+        </section>
+        <!-- Konec 3. sekce -->
     </main>
 
-    <!-- Čtvrtý kontejner -->
-    <div class="container gray">
-
-        <!-- Patička stránky -->
-        <footer>
+    <!-- Patička stránky -->
+    <footer class="section section--gray">
+        <div class="container">
             <div class="footer__box">
                 <a href="https://www.facebook.com">
                     <img src="images/icon__facebook.svg" alt="Facebook logo" title="Facebook">
@@ -137,10 +124,10 @@
                     <img src="images/icon__google.svg" alt="Google logo" title="Google">
                 </a>
             </div>
-        </footer>
-        <!-- Konec patičky stránky -->
-    </div>
-    <!-- Konec čtvrtého kontejneru -->
+        </div>
+    </footer>
+    <!-- Konec patičky stránky -->
+
 </body>
 
 </html>
